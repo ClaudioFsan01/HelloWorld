@@ -200,9 +200,72 @@ section#corpo figure.foto-legenda:hover figcaption {
     
    }     
    
+   section#corpo_conosco
+   {
+	  background-color: white;
+      
+	   
+   }
+    section#corpo_conosco table{
+		width: 100%;
+		height: 400px;
+	}
    
+   section#corpo_conosco table tr th{
+	   
+	   border: 1px solid black;
+	   
+   }
    
+   section#corpo_conosco table tr th#th1{
+	   background-color: blue;
+   }
+    section#corpo_conosco table tr th#th2{
+		background-color: green;
+	}
+	section#corpo_conosco table tr th#th3{
+		background-color: yellow;
+	}
+	section#corpo_conosco table tr th4{}
    
+   section#corpo_conosco table tr td{
+	   
+	   border: 1px solid black;
+   }
+   
+    section#corpo_conosco table tr td#td1{
+		background-color: black;
+	    color: #fff;
+
+	}
+   
+	section#corpo_conosco table tr td#td5{
+		background-color: pink;
+	}
+
+	section#corpo_conosco table tr td#td8{
+		background-color: orange;
+		color:mediumslateblue;
+	}
+   section#corpo_cadastro{
+	   height: 100%;
+	   width: 1000px;
+	   background-color: #FFFFFF;
+	   margin-top: 10px;	      
+	   margin-bottom: 5px;
+	   margin-left: 190px;
+	  
+   }
+
+   section#corpo_cadastro form input.botao{
+	   background: #4f4f4f;
+	   height: 30px;
+	   width: 90px;
+	   margin-top: 10px; 
+	   margin-left: 10px; 
+	   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+   }
  footer#rodape{
 	 text-align: center;
 	 padding-top: 15px;
