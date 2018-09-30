@@ -37,7 +37,11 @@
     </ul>    
 
 </li>
-<li> <a href="quemsomos.html">Quem Somos</a> </li>
+<li> <a href="quemsomos.html">Quem Somos</a>
+    <ul>
+            <li><a href="literatura.html"> literatura</a></li>
+    </ul>
+</li>
 <li> <a href="cadastro.html">Cadastro</a> </li>
 <li> <a href="faleconosco.html">Fale-Conosco </a> </li>
 </ul>
@@ -80,6 +84,8 @@
     <label for="cSenha"> Senha :</label>
     <input type="password" name="tpassword" id="cSenha" minlength="8"  placeholder=" minimo 8 digitos">
   </p> 
+  
+  <img src="..\_imagens\Usuário-HM.png"/>
 
 </fieldset>
 
@@ -121,6 +127,7 @@
       </datalist>
    </p>
    
+   <img src="..\_imagens/casa.jpg" />
 </fieldset>
 
 <fieldset id="Mensagem">
@@ -128,9 +135,15 @@
     <label for="cMens"> Observação : </label>
     <textarea name="tMens" id="cMens" cols="50" rows="5"  maxlength="150" placeholder="Pergunta , crítica ou sugestão"></textarea>
 
+	<img src="..\_imagens/envelope.png"/>
 </fieldset> 
+<!-- 
+<button type="button" onclick="alert('vc tem certeza ?'); submit()"> clique aqui </button>
+o button  permite executar qualquer coisa do javascrit e validar formulario -->
+<!-- input type="submit" tambem permite utilizar onclick  pra realizar as mesmas tarefas -->
 
-<input type="submit" value="Enviar" class="botao">
+<input type="submit" onclick="alert('vc tem certeza ?');"  value="Enviar" class="botao">
+
 </form>
 
 <!--  inserir comentarios --> 

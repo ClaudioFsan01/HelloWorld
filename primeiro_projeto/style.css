@@ -266,6 +266,38 @@ section#corpo figure.foto-legenda:hover figcaption {
 	   font-family: Verdana, Geneva, Tahoma, sans-serif;
 
    }
+   section#corpo_cadastro form fieldset#usuario img{
+	   height: 200px;
+	   width: 200px;
+	   margin-left: 620px;
+	   margin-top: -200px;
+   }
+   
+   section#corpo_cadastro form fieldset#logradouro img{
+	   height: 200px;
+	   width: 200px;
+	   margin-left: 650px;
+	   margin-top: -150px;
+   }
+   
+   section#corpo_cadastro form fieldset#Mensagem img{
+	   
+	   height: 150px;
+	   width: 200px;
+	   margin-left: 700px;
+	   margin-top: -90px;
+	   margin-bottom : 30px;
+   }
+   
+   section#corpo_cadastro form fieldset#Mensagem textarea{
+	   
+	   height: 100%;
+	   width: 500px;
+	   margin-top: 40px;
+	   
+   }
+   
+   
  footer#rodape{
 	 text-align: center;
 	 padding-top: 15px;

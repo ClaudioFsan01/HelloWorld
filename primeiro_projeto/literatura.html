@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8"/>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/carousel.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="interface">
+
+
+<header id="cabeçalho">
+
+<h1> Literatura</h1>
+
+
+<nav id="logo">
+    <a href="index.html">
+<img src="..\_imagens/logo.PNG"/>
+</a>
+</nav>
+
+<div id="menu_container">
+    <div id="menu">
+<ul>
+<li> <a href="index.html" > Inicio</a> </li>
+<li> <a href="maislidas.html"> Notícias + lidas </a>
+    <ul >
+            <li><a href="politica.html">Politica</a></li>
+            <li><a href="economia.html">Economia</a></li>
+            <li><a href="esportes.html">Esportes</a></li>
+    </ul>    
+
+</li>
+<li> <a href="quemsomos.html">Quem Somos</a>
+    <ul>
+            <li><a href="literatura.html"> literatura</a></li>
+    </ul>
+</li>
+<li> <a href="cadastro.html">Cadastro</a> </li>
+<li> <a href="faleconosco.html">Fale-Conosco </a> </li>
+</ul>
+</div>
+</div>
+
+</header>
+
+<section id="corpo_avaliacao">
+<!--
+<h3>Livros recomendados </h3>
+<div class="container">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"> </li>
+    <li data-target="#myCarousel" data-slide-to="1"> </li>
+    <li data-target="#myCarousel" data-slide-to="2"> </li>
+    <li data-target="#myCarousel" data-slide-to="3"> </li>
+    <li data-target="#myCarousel" data-slide-to="4"> </li>
+    
+</ol>
+
+<div class="carousel-inner" role="listbox">
+
+        
+    <div id="item0" class="item active">
+     <img class="first slide" src="..\_imagens/a-nova-era.jpg" alt="A Nova Era a a Revolução Cultural"/>
+     <div class="carousel-caption">
+       
+     </div>
+    </div>
+
+    <div class="item1">
+            <img class="second-slide" src="..\_imagens/1984.jpg" alt="1984"/>
+    </div>
+       
+    <div class="item2">
+            <img  class="third-slide" src="..\_imagens/principe.jpg" alt="O Principe"/>
+    </div>
+      
+    <div class="item3">
+            <img  src="..\_imagens/Che.jpg" alt="O Verdadeiro Che"/>
+    </div>
+    
+    <div class="item4">
+            <img  src="..\_imagens/revbichos.jpg" alt="O Verdadeiro Che"/>
+    </div>
+    
+    <a class="left carousel-control" href="#myCarousel"  role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">previous</span>
+     
+    </a>
+  
+   <a class="right carousel-control" href="#myCarousel"  role="button" data-slide="next">
+       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"> </span>
+           <span class="sr-only">Next</span>
+       </span>
+   </a>
+
+</div>
+
+</div>
+
+</div>
+-->
+<form method="POST" action="relatorio.php">
+
+<fieldset id="avaliacao">
+
+<legend> Avaliação do livro </legend>
+<p>
+<label for="cTitulo"> Titulo :</label>
+<input type="text" name="Titulo" id="cTitulo" size = 30 maxlength="30" placeholder="Título">
+</p>
+<p>
+  <label for="cAutor">Autor :</label>  
+  <input type="text" name="Autor" id="cAutor" size=30 maxlength="30" placeholder="Autor">
+</p>
+<p>
+    <label> Avaliação :</label>
+    <label for="cRuin" > Ruin :</label>
+    <input type="Radio"  name="Avaliação" id="cRuin">
+    <label for=""></label>
+    <label for="cRaz" class="Razoavel"> Razoavel :</label>
+    <input type="Radio" name="Avaliação" id="cRaz"><br>
+    <label for="cBom" class="bom">Bom :</label>
+    <input type="radio" name="Avaliação" id="cBom" checked>
+    <label for="mBom" class="MuitoBom">Muito Bom :</label>
+    <input type="radio" name="Avaliação" id="mBom"><br>
+    <label for="cOtimo" class="otimo"> Otimo :</label>
+    <input type="radio" name="Avaliação" id="cOtimo" >
+
+
+</p>
+
+<p>
+<label for="cCat">Categoria :</label>
+<select name="Categoria" id="cCat">
+    <option value="Best-Seller">Best-Seller</option>
+    <option value="Romance">Romance</option>
+    <option value="Ficção">Ficção</option>
+    <option value="Terror">Terror</option>
+    <option value="Terror">Auto-Ajuda</option>
+
+</select>
+
+</p>
+
+<p>
+ <label for="cComent" class="Coment">Comentario :</label>
+ <textarea name="Comentario" id="cComent" cols="30" rows="5" placeholder="Informação, crítica ou sugestão"></textarea>
+
+</p>
+<p>
+  
+      <button type="button"  class="cBotao" onclick="alert('Tem certeza ?'); submit()"> Enviar </button>
+
+</p>
+
+<!-- 
+<button type="button" onclick="alert('vc tem certeza ?'); submit()"> clique aqui </button>
+o button  permite executar qualquer coisa do javascrit e validar formulario -->
+<!-- input type="submit" tambem permite utilizar onclick  pra realizar as mesmas tarefas 
+    <input type="submit" onclick="alert('vc tem certeza ?');"  value="Enviar" class="botao">
+-->
+
+
+
+</fieldset>
+
+
+
+
+</form>
+
+
+
+<!--<h2>Este é o H2<h2>
+<h3>Este é o H3<h3>
+<h4>Este é o H4<h4>
+-->
+
+<!--  inserir comentarios -->
+<!-- article  artigo-->
+<!--aside-->
+
+ <!--border-right: 1px solid #606060;-->
+ <!-- border-left: 1px solid #606060;-->
+
+</section>
+
+<footer id="rodape"> 
+ Copyright © 2018 Claudio Felix <br>
+ <a href="https://www.facebook.com/claudiofelixdossantos.felixdossantos">Facebook</a> |
+ <a href="https://twitter.com/claudiofelixsan">Twiter</a>
+</footer>
+</div>
+
+<script src="js/jquery.min.js"></script>		
+<script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
